@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadai BPKB Jogja Terpercaya & Cepat Tanpa Ribet - Gadai Jaya</title>
-    <meta name="description" content="Gadai BPKB Jogja tanpa ribet dan cepat cair. Solusi dana tunai jaminan BPKB Mobil & Motor di Yogyakarta terpercaya. Bunga rendah, aman, resmi, dan proses 1 jam cair.">
-    <meta name="keywords" content="gadai bpkb jogja, gadai bpkb motor jogja, gadai bpkb mobil jogja, pinjaman jaminan bpkb jogja, gadai bpkb jogja tanpa ribet dan cepat, gadai bpkb jogja terpercaya">
+    
+    <!-- 1. PERBAIKAN META DESCRIPTION (Wajib ada untuk SEO Score) -->
+    <meta name="description" content="Gadai BPKB Jogja tanpa ribet dan cepat cair dalam 1 jam. Layanan gadai BPKB Jogja terpercaya untuk motor & mobil. Bunga rendah, resmi, dan aman di Gadai Jaya.">
+    
+    <!-- 2. PERBAIKAN META KEYWORDS -->
+    <meta name="keywords" content="gadai bpkb jogja, gadai bpkb jogja tanpa ribet dan cepat, gadai bpkb jogja terpercaya, gadai bpkb motor jogja, pinjaman jaminan bpkb jogja">
+    
     <meta name="author" content="Gadai Jaya">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0ea5e9">
+
+    <!-- 3. PERBAIKAN HTTP 404 (Canonical URL) -->
+    <!-- Ganti 'username' dengan username github anda. Penting agar Google tahu ini halaman asli -->
+    <link rel="canonical" href="https://artrushstd.github.io/gadai-jaya" />
+    
+    <!-- Mencegah Error 404 pada Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+
+    <title>Gadai BPKB Jogja Terpercaya & Cepat Tanpa Ribet - Gadai Jaya</title>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -22,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS (CDN for easy setup, use CLI for production max speed) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -32,7 +45,7 @@
                         sky: { 50: '#f0f9ff', 100: '#e0f2fe', 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 900: '#0c4a6e' },
                     },
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
-                    animation: { 'marquee': 'marquee 25s linear infinite' },
+                    animation: { 'marquee': 'marquee 35s linear infinite' }, // Diperlambat agar lebih readable
                     keyframes: { marquee: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-100%)' } } }
                 }
             }
@@ -42,40 +55,36 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <!-- Custom CSS -->
     <style>
-        /* macOS Smooth Transitions */
-        * { transition: background-color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        /* Aksesibilitas & Smoothness */
+        * { transition: background-color 0.3s ease, color 0.3s ease; }
+        html { scroll-behavior: smooth; }
         
-        /* Glassmorphism */
         .glass {
-            background: rgba(255, 255, 255, 0.75);
+            background: rgba(255, 255, 255, 0.85); /* Meningkatkan kontras */
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
 
-        /* Parallax Optimization */
         .parallax-bg {
-            background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2070&q=80');
+            background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        /* Running Text Wrapper */
         .marquee-container { overflow: hidden; white-space: nowrap; position: relative; }
-        .marquee-content { display: inline-block; padding-left: 100%; animation: marquee 30s linear infinite; }
+        .marquee-content { display: inline-block; padding-left: 100%; animation: marquee 35s linear infinite; }
         
-        /* Smooth Scrollbar */
+        /* Hide scrollbar for aesthetics */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f5f9; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
 
-    <!-- JSON-LD Schema for Local SEO -->
+    <!-- Schema Markup JSON-LD (Penting untuk Local SEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -83,6 +92,7 @@
       "name": "Gadai Jaya",
       "image": "https://gadaijaya.github.io/logo.png",
       "description": "Jasa Gadai BPKB Jogja terpercaya, proses cepat dan bunga rendah.",
+      "url": "https://gadaijaya.github.io/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Jl. Magelang KM 5, Yogyakarta",
@@ -93,37 +103,35 @@
       },
       "telephone": "+6285159336396",
       "openingHours": "Mo-Sa 08:00-17:00",
-      "priceRange": "$$",
-      "areaServed": ["Yogyakarta", "Sleman", "Bantul", "Kulon Progo", "Gunung Kidul"]
+      "priceRange": "$$"
     }
     </script>
 </head>
-<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-sky-200 selection:text-sky-900">
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
 
-    <!-- Navbar (Sticky & Glass) -->
-    <header class="fixed w-full top-0 z-50 glass shadow-sm transition-all duration-300">
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 glass shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <!-- Logo Text -->
-                    <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-sky-400">
+                    <a href="#" class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-sky-400" aria-label="Gadai Jaya Home">
                         Gadai Jaya
-                    </span>
+                    </a>
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#hero" class="text-slate-600 hover:text-sky-600 font-medium text-sm tracking-wide">Beranda</a>
-                    <a href="#keunggulan" class="text-slate-600 hover:text-sky-600 font-medium text-sm tracking-wide">Keunggulan</a>
-                    <a href="#review" class="text-slate-600 hover:text-sky-600 font-medium text-sm tracking-wide">Testimoni</a>
-                    <a href="#artikel" class="text-slate-600 hover:text-sky-600 font-medium text-sm tracking-wide">Artikel</a>
+                    <a href="#hero" class="text-slate-600 hover:text-sky-600 font-medium text-sm transition-colors">Beranda</a>
+                    <a href="#keunggulan" class="text-slate-600 hover:text-sky-600 font-medium text-sm transition-colors">Keunggulan</a>
+                    <a href="#review" class="text-slate-600 hover:text-sky-600 font-medium text-sm transition-colors">Testimoni</a>
+                    <a href="#artikel" class="text-slate-600 hover:text-sky-600 font-medium text-sm transition-colors">Artikel</a>
                 </nav>
                 <div class="hidden md:flex">
-                    <a href="https://wa.me/6285159336396?text=Halo%20Gadai%20Jaya,%20saya%20ingin%20gadai%20BPKB" class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2.5 rounded-full shadow-lg shadow-sky-500/30 font-medium transition-transform hover:-translate-y-0.5 active:translate-y-0">
+                    <a href="https://wa.me/6285159336396?text=Halo%20Gadai%20Jaya,%20saya%20ingin%20gadai%20BPKB" class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2.5 rounded-full shadow-lg shadow-sky-500/30 font-medium transition-transform hover:-translate-y-0.5" aria-label="Hubungi WhatsApp">
                         Hubungi Kami
                     </a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-sky-600 focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-slate-600 p-2" aria-label="Buka Menu">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
@@ -132,55 +140,49 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md absolute w-full border-b border-slate-100">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-sky-600 hover:bg-sky-50">Beranda</a>
-                <a href="#keunggulan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-sky-600 hover:bg-sky-50">Keunggulan</a>
-                <a href="#review" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-sky-600 hover:bg-sky-50">Testimoni</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md absolute w-full border-b border-slate-100 shadow-xl">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-sky-50">Beranda</a>
+                <a href="#keunggulan" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-sky-50">Keunggulan</a>
+                <a href="#review" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-sky-50">Testimoni</a>
                 <a href="https://wa.me/6285159336396" class="block w-full text-center mt-4 bg-sky-500 text-white px-4 py-3 rounded-lg font-bold">WhatsApp Sekarang</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section Parallax -->
+        <!-- Hero Section -->
         <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden parallax-bg min-h-screen flex items-center">
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-sky-900/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-sky-900/30"></div>
             
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left z-10">
                 <div class="md:w-2/3 lg:w-1/2 space-y-6">
                     <div class="inline-block px-4 py-1.5 rounded-full bg-sky-500/20 border border-sky-400/30 backdrop-blur-sm">
-                        <span class="text-sky-200 text-xs font-bold tracking-wider uppercase">Solusi Keuangan Terbaik di Jogja</span>
+                        <span class="text-sky-200 text-xs font-bold tracking-wider uppercase">Proses 1 Jam Cair</span>
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
                         Gadai BPKB Jogja <br>
                         <span class="text-sky-400">Tanpa Ribet & Cepat</span>
                     </h1>
                     <p class="text-lg md:text-xl text-slate-200 max-w-2xl leading-relaxed">
-                        Dapatkan dana tunai jaminan BPKB Mobil & Motor dengan proses kilat. Resmi, aman, dan bunga kompetitif. Gadai BPKB Jogja terpercaya pilihan masyarakat.
+                        Dana tunai langsung cair dengan jaminan BPKB Mobil & Motor. Resmi, bunga ringan, dan BPKB tersimpan aman. Solusi gadai Jogja terpercaya.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 mt-8 justify-center md:justify-start">
-                        <a href="https://wa.me/6285159336396?text=Halo,%20saya%20mau%20gadai%20BPKB" class="bg-sky-500 hover:bg-sky-400 text-white px-8 py-4 rounded-xl shadow-xl shadow-sky-500/20 font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <a href="https://wa.me/6285159336396?text=Halo,%20saya%20mau%20gadai%20BPKB" class="bg-sky-500 hover:bg-sky-400 text-white px-8 py-4 rounded-xl shadow-xl shadow-sky-500/20 font-bold text-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2" aria-label="Ajukan via WhatsApp">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
                             Ajukan Via WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
-            
-            <!-- Mouse Scroll Animation -->
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
-                <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-            </div>
         </section>
 
-        <!-- Running Text Section -->
+        <!-- Running Text -->
         <div class="bg-sky-600 py-3 overflow-hidden border-y border-sky-500">
             <div class="marquee-container">
                 <div class="marquee-content text-white font-semibold tracking-wider text-sm md:text-base">
-                    GAJIAN BPKB JOGJA TERPERCAYA • PROSES 1 JAM CAIR • BUNGA RINGAN • TANPA BI CHECKING • TERIMA PLAT LUAR • PENYIMPANAN BPKB AMAN • GADAI BPKB JOGJA TANPA RIBET DAN CEPAT • HUBUNGI 0851-5933-6396 •
-                    GAJIAN BPKB JOGJA TERPERCAYA • PROSES 1 JAM CAIR • BUNGA RINGAN • TANPA BI CHECKING • TERIMA PLAT LUAR • PENYIMPANAN BPKB AMAN • GADAI BPKB JOGJA TANPA RIBET DAN CEPAT • HUBUNGI 0851-5933-6396 •
+                    GADAI BPKB JOGJA TERPERCAYA • PROSES 1 JAM CAIR • BUNGA RINGAN • TANPA BI CHECKING • TERIMA PLAT LUAR • PENYIMPANAN BPKB AMAN • HUBUNGI 0851-5933-6396 •
+                    GADAI BPKB JOGJA TERPERCAYA • PROSES 1 JAM CAIR • BUNGA RINGAN • TANPA BI CHECKING • TERIMA PLAT LUAR • PENYIMPANAN BPKB AMAN • HUBUNGI 0851-5933-6396 •
                 </div>
             </div>
         </div>
@@ -196,52 +198,51 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Feature 1 -->
-                    <div class="p-8 rounded-3xl bg-slate-50 hover:bg-white hover:shadow-xl hover:shadow-sky-100/50 transition-all border border-slate-100 group">
-                        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600 group-hover:scale-110 transition-transform">
+                    <div class="p-8 rounded-3xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all border border-slate-100 group">
+                        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600">
                             <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         </div>
-                        <h4 class="text-xl font-bold mb-3 text-slate-800">Proses Cepat & Mudah</h4>
-                        <p class="text-slate-600 leading-relaxed">Dana cair dalam hitungan jam. Kami memprioritaskan "gadai bpkb jogja tanpa ribet dan cepat" untuk kebutuhan mendesak Anda.</p>
+                        <h4 class="text-xl font-bold mb-3 text-slate-800">Cepat & Tanpa Ribet</h4>
+                        <p class="text-slate-600">Kami mengutamakan kecepatan. Gadai BPKB Jogja tanpa ribet, syarat mudah, dan dana langsung cair ke rekening Anda.</p>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="p-8 rounded-3xl bg-slate-50 hover:bg-white hover:shadow-xl hover:shadow-sky-100/50 transition-all border border-slate-100 group">
-                        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600 group-hover:scale-110 transition-transform">
+                    <div class="p-8 rounded-3xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all border border-slate-100 group">
+                        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600">
                             <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                         </div>
-                        <h4 class="text-xl font-bold mb-3 text-slate-800">Aman & Terpercaya</h4>
-                        <p class="text-slate-600 leading-relaxed">Gadai Jaya menjamin keamanan BPKB Anda 100%. Transparan tanpa biaya tersembunyi. Layanan gadai BPKB Jogja terpercaya.</p>
+                        <h4 class="text-xl font-bold mb-3 text-slate-800">Aman & Resmi</h4>
+                        <p class="text-slate-600">Layanan gadai BPKB Jogja terpercaya. BPKB disimpan di brankas aman dan berasuransi. Transparan tanpa biaya tersembunyi.</p>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="p-8 rounded-3xl bg-slate-50 hover:bg-white hover:shadow-xl hover:shadow-sky-100/50 transition-all border border-slate-100 group">
-                        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600 group-hover:scale-110 transition-transform">
+                    <div class="p-8 rounded-3xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all border border-slate-100 group">
+                        <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 text-sky-600">
                             <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </div>
                         <h4 class="text-xl font-bold mb-3 text-slate-800">Pencairan Tinggi</h4>
-                        <p class="text-slate-600 leading-relaxed">Nilai taksiran kendaraan tinggi hingga 90% dari harga pasar. Solusi tepat untuk kebutuhan modal usaha.</p>
+                        <p class="text-slate-600">Dapatkan nilai taksiran maksimal hingga 90% dari harga kendaraan. Solusi tepat untuk tambahan modal usaha.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonial Section (Slider) -->
+        <!-- Testimonial Section -->
         <section id="review" class="py-20 bg-slate-50 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Apa Kata Mereka?</h2>
-                    <p class="mt-4 text-slate-600">Pengalaman nyata dari nasabah Gadai Jaya di Yogyakarta.</p>
+                    <p class="mt-4 text-slate-600">Testimoni asli nasabah Gadai Jaya Yogyakarta.</p>
                 </div>
 
-                <!-- Swiper -->
-                <div class="swiper mySwiper pb-12 px-4">
+                <div class="swiper mySwiper px-4 pb-12">
                     <div class="swiper-wrapper">
                         <!-- Review 1 -->
                         <div class="swiper-slide h-auto">
                             <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 h-full flex flex-col justify-between">
                                 <div>
-                                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
-                                    <p class="text-slate-600 italic">"Gadai BPKB Jogja paling oke. Pagi ajuin, siang udah cair. CS nya ramah banget dan jelasin rinciannya detail. Terima kasih Gadai Jaya!"</p>
+                                    <div class="flex text-yellow-400 mb-4" aria-label="5 Bintang">★★★★★</div>
+                                    <p class="text-slate-600 italic">"Gadai BPKB Jogja paling oke. Pagi ajuin, siang udah cair. CS nya ramah banget dan jelasin rinciannya detail."</p>
                                 </div>
                                 <div class="mt-6 flex items-center">
                                     <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 font-bold">BS</div>
@@ -256,8 +257,8 @@
                         <div class="swiper-slide h-auto">
                             <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 h-full flex flex-col justify-between">
                                 <div>
-                                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
-                                    <p class="text-slate-600 italic">"Awalnya ragu, tapi ternyata Gadai Jaya beneran terpercaya. BPKB aman, pencairan tinggi buat nambah modal warung."</p>
+                                    <div class="flex text-yellow-400 mb-4" aria-label="5 Bintang">★★★★★</div>
+                                    <p class="text-slate-600 italic">"Awalnya ragu, tapi ternyata Gadai Jaya beneran terpercaya. BPKB aman, pencairan tinggi. Sangat membantu."</p>
                                 </div>
                                 <div class="mt-6 flex items-center">
                                     <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold">SA</div>
@@ -272,30 +273,14 @@
                         <div class="swiper-slide h-auto">
                             <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 h-full flex flex-col justify-between">
                                 <div>
-                                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
-                                    <p class="text-slate-600 italic">"Prosesnya beneran tanpa ribet. Syarat mudah, surveyor datang ke rumah, dana langsung transfer. Rekomen buat yang butuh dana cepat."</p>
+                                    <div class="flex text-yellow-400 mb-4" aria-label="5 Bintang">★★★★★</div>
+                                    <p class="text-slate-600 italic">"Prosesnya beneran tanpa ribet. Syarat mudah, surveyor datang ke rumah, dana langsung transfer."</p>
                                 </div>
                                 <div class="mt-6 flex items-center">
                                     <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold">HN</div>
                                     <div class="ml-3">
                                         <h5 class="font-bold text-slate-900">Hendra Nugroho</h5>
-                                        <span class="text-xs text-slate-500">Karyawan Swasta, Kota Jogja</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <!-- Review 4 -->
-                         <div class="swiper-slide h-auto">
-                            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 h-full flex flex-col justify-between">
-                                <div>
-                                    <div class="flex text-yellow-400 mb-4">★★★★★</div>
-                                    <p class="text-slate-600 italic">"Sangat membantu saat butuh biaya pendidikan anak. Bunganya ringan dibanding tempat lain. Pelayanan mantap."</p>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 font-bold">RW</div>
-                                    <div class="ml-3">
-                                        <h5 class="font-bold text-slate-900">Ratna Wulandari</h5>
-                                        <span class="text-xs text-slate-500">Pedagang, Kulon Progo</span>
+                                        <span class="text-xs text-slate-500">Karyawan, Kota Jogja</span>
                                     </div>
                                 </div>
                             </div>
@@ -306,22 +291,16 @@
             </div>
         </section>
 
-        <!-- SEO Articles Section (For Google Algorithm) -->
+        <!-- SEO Article Section -->
         <section id="artikel" class="py-20 bg-white border-t border-slate-100">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-slate-600">
-                <h2 class="text-2xl font-bold text-slate-900 mb-6">Informasi Gadai BPKB di Yogyakarta</h2>
-                
-                <article class="mb-8 prose prose-sky">
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">Tips Gadai BPKB Jogja Tanpa Ribet dan Cepat</h3>
-                    <p class="mb-4">
-                        Mencari pinjaman dana tunai di Yogyakarta kini semakin mudah. Layanan <strong>gadai BPKB Jogja tanpa ribet dan cepat</strong> menjadi pilihan utama masyarakat yang membutuhkan dana mendesak. Berbeda dengan pinjaman bank konvensional yang memakan waktu lama, Gadai Jaya menawarkan solusi pencairan dana hanya dalam hitungan jam. Pastikan dokumen seperti KTP, KK, dan STNK lengkap untuk mempercepat proses verifikasi.
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 text-slate-600">
+                <article>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Layanan Gadai BPKB Jogja Terpercaya</h2>
+                    <p class="mb-4 leading-relaxed">
+                        Mencari pinjaman dana tunai kini semakin mudah dengan layanan <strong>gadai BPKB Jogja tanpa ribet dan cepat</strong>. Gadai Jaya hadir sebagai solusi finansial bagi masyarakat Yogyakarta yang membutuhkan dana mendesak untuk modal usaha, biaya pendidikan, atau kebutuhan konsumtif lainnya.
                     </p>
-                </article>
-
-                <article class="mb-8 prose prose-sky">
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">Memilih Tempat Gadai BPKB Jogja Terpercaya</h3>
-                    <p class="mb-4">
-                        Banyak lembaga keuangan menawarkan pinjaman, namun memilih <strong>gadai BPKB Jogja terpercaya</strong> adalah kunci keamanan aset Anda. Gadai Jaya menjamin penyimpanan BPKB mobil atau motor Anda di brankas tahan api dan berasuransi. Kami melayani area Sleman, Bantul, Gunung Kidul, Kulon Progo, dan Kota Yogyakarta dengan standar pelayanan profesional.
+                    <p class="mb-4 leading-relaxed">
+                        Kami menjamin keamanan aset Anda. Sebagai tempat <strong>gadai BPKB Jogja terpercaya</strong>, kami menerapkan standar keamanan tinggi dalam penyimpanan BPKB (Mobil/Motor). Proses pengajuan sangat sederhana: cukup hubungi kami via WhatsApp, kirim foto dokumen, dan tim kami akan segera memproses pengajuan Anda.
                     </p>
                 </article>
             </div>
@@ -330,11 +309,11 @@
         <!-- CTA Final -->
         <section class="py-20 bg-gradient-to-br from-sky-600 to-sky-800 text-white text-center px-4">
             <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">Butuh Dana Cepat Hari Ini?</h2>
-                <p class="text-sky-100 text-lg mb-10">Jangan biarkan kebutuhan mendesak menunggu. Konsultasikan kebutuhan dana Anda bersama tim Gadai Jaya.</p>
-                <a href="https://wa.me/6285159336396?text=Halo%20Admin,%20bisa%20bantu%20simulasi%20gadai%20bpkb?" class="inline-flex items-center bg-white text-sky-600 px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-sky-50 transition-all hover:scale-105">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Butuh Dana Hari Ini?</h2>
+                <p class="text-sky-100 text-lg mb-10">Hubungi kami sekarang untuk simulasi angsuran dan pencairan.</p>
+                <a href="https://wa.me/6285159336396?text=Halo%20Admin,%20bisa%20bantu%20simulasi%20gadai%20bpkb?" class="inline-flex items-center bg-white text-sky-600 px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-sky-50 transition-all hover:scale-105" aria-label="Hubungi via WhatsApp">
                     <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                    Hubungi WhatsApp 0851-5933-6396
+                    WhatsApp 0851-5933-6396
                 </a>
             </div>
         </section>
@@ -344,7 +323,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
                 <span class="text-2xl font-bold text-white block mb-4">Gadai Jaya</span>
-                <p class="text-sm leading-relaxed">Pusat Gadai BPKB Jogja Terpercaya. Melayani pinjaman dana tunai jaminan BPKB Mobil & Motor dengan proses cepat dan aman.</p>
+                <p class="text-sm leading-relaxed">Pusat Gadai BPKB Jogja Terpercaya. Proses cepat, aman, dan bunga ringan.</p>
             </div>
             <div>
                 <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Kontak</h4>
@@ -356,7 +335,6 @@
                 <ul class="space-y-2 text-sm">
                     <li><a href="#" class="hover:text-sky-400">Gadai BPKB Motor</a></li>
                     <li><a href="#" class="hover:text-sky-400">Gadai BPKB Mobil</a></li>
-                    <li><a href="#" class="hover:text-sky-400">Take Over BPKB</a></li>
                 </ul>
             </div>
         </div>
@@ -366,59 +344,30 @@
     </footer>
 
     <!-- Scripts -->
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    
     <script>
-        // Initialize Swiper (Review Slider)
         const swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
             breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
             },
         });
 
-        // Mobile Menu Toggle
+        // Mobile Menu Logic
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        document.querySelectorAll('#mobile-menu a').forEach(l => l.addEventListener('click', () => menu.classList.add('hidden')));
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
-
-        // Add shadow to nav on scroll
+        // Navbar Shadow Scroll Effect
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
-            if (window.scrollY > 10) {
-                header.classList.add('shadow-md');
-            } else {
-                header.classList.remove('shadow-md');
-            }
+            window.scrollY > 10 ? header.classList.add('shadow-md') : header.classList.remove('shadow-md');
         });
     </script>
 </body>
